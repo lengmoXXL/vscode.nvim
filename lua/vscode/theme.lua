@@ -691,16 +691,16 @@ theme.set_highlights = function(opts)
     hl(0, 'IlluminatedWordWrite', { bg = isDark and c.vscPopupHighlightGray or c.vscPopupHighlightLightBlue })
 
     -- mini.statusline
-    hl(0, 'MiniStatuslineModeNormal', { bg = c.vscUiBlue, fg = c.vscFront })
-    hl(0, 'MiniStatuslineModeInsert', { bg = c.vscUiBlue, fg = c.vscFront })
-    hl(0, 'MiniStatuslineModeVisual', { bg = c.vscUiBlue, fg = c.vscFront })
-    hl(0, 'MiniStatuslineModeReplace', { bg = c.vscUiBlue, fg = c.vscFront })
-    hl(0, 'MiniStatuslineModeCommand', { bg = c.vscUiBlue, fg = c.vscFront })
-    hl(0, 'MiniStatuslineModeOther', { bg = c.vscUiBlue, fg = c.vscFront })
-    hl(0, 'MiniStatuslineDevinfo', { bg = c.vscUiBlue, fg = c.vscFront })
-    hl(0, 'MiniStatuslineFilename', { bg = c.vscUiBlue, fg = c.vscFront })
-    hl(0, 'MiniStatuslineFileinfo', { bg = c.vscUiBlue, fg = c.vscFront })
-    hl(0, 'MiniStatuslineInactive', { bg = c.vscUiBlue, fg = c.vscFront })
+    hl(0, 'MiniStatuslineModeNormal', { bg = c.vscLeftDark, fg = c.vscFront })
+    hl(0, 'MiniStatuslineModeInsert', { bg = c.vscLeftDark, fg = c.vscFront })
+    hl(0, 'MiniStatuslineModeVisual', { bg = c.vscLeftDark, fg = c.vscFront })
+    hl(0, 'MiniStatuslineModeReplace', { bg = c.vscLeftDark, fg = c.vscFront })
+    hl(0, 'MiniStatuslineModeCommand', { bg = c.vscLeftDark, fg = c.vscFront })
+    hl(0, 'MiniStatuslineModeOther', { bg = c.vscLeftDark, fg = c.vscFront })
+    hl(0, 'MiniStatuslineDevinfo', { bg = c.vscLeftDark, fg = c.vscFront })
+    hl(0, 'MiniStatuslineFilename', { bg = c.vscLeftMid, fg = c.vscFront })
+    hl(0, 'MiniStatuslineFileinfo', { bg = c.vscLeftLight, fg = c.vscFront })
+    hl(0, 'MiniStatuslineInactive', { bg = c.vscLeftDark, fg = c.vscFront })
 
     -- mini.icons
     hl(0, 'MiniIconsAzure', { fg = c.vscBlue })
@@ -750,6 +750,15 @@ theme.set_highlights = function(opts)
     hl(0, 'CompileModeCheckResult', { fg = '#ff9966', bold = true })
     hl(0, 'CompileModeCheckTarget', { fg = '#ff9966' })
     hl(0, 'CompileModeErrorLocus', { link = 'Visual' })
+
+    -- Mini Statusline
+    hl(0, 'MiniStatuslineDevinfo', { bg = isDark and c.vscLeftLight or c.vscLeftDark })
+    hl(0, 'MiniStatuslineFileinfo', { bg = isDark and c.vscLeftLight or c.vscLeftDark })
+    hl(0, 'MiniStatuslineModeCommand', { fg = c.vscBack, bg = c.vscLightRed, bold = true })
+    hl(0, 'MiniStatuslineModeInsert', { fg = c.vscBack, bg = c.vscLightBlue, bold = true })
+    hl(0, 'MiniStatuslineModeNormal', { fg = c.vscBack, bg = c.vscLightGreen, bold = true })
+    hl(0, 'MiniStatuslineModeReplace', { fg = c.vscBack, bg = c.vscYellowOrange, bold = true })
+    hl(0, 'MiniStatuslineModeVisual', { fg = c.vscBack, bg = c.vscPink, bold = true })
 
     -- Copilot
     hl(0, 'CopilotSuggestion', { fg = c.vscSuggestion, bg = 'NONE' })
