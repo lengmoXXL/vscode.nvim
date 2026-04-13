@@ -195,6 +195,7 @@ theme.set_highlights = function(opts)
     hl(0, 'RenderMarkdownH4Bg', { bg = c.vscPopupHighlightGray, bold = true })
     hl(0, 'RenderMarkdownH5Bg', { bg = c.vscPopupHighlightGray, bold = true })
     hl(0, 'RenderMarkdownH6Bg', { bg = c.vscPopupHighlightGray, bold = true })
+    hl(0, 'RenderMarkdownCode', { bg = c.vscCursorDark })
 
     -- Asciidoc
     hl(0, 'asciidocAttributeEntry', { fg = c.vscYellowOrange })
